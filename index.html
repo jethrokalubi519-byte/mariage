@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="Width=device-width,initial-scale=1.0">
+<title>Invitation de mariage</title>
+</head>
+<body>
+<h1>Bienvenu à nôtre mariage</h1>
+
+<p id="invite"></p>
+<scrip>
+const params = new
+URLSearchparams(Windows.location.search);
+const nom = params.get("nom");
+if(nom){
+document.getElementByld("invite").innerHTML ="cher(e) <b>" + nom + "</b>, vous êtes cordialement invité à nôtre mariage.";
+}else{
+document.getElementByld("invite").innerHTML = "vous êtes invité à nôtre mariage.";
+}
+</scrip>
+</body>
+</html>
